@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+        </header>
+        <nav>
+        </nav>
+        <main id="loginContainer">
+            <div><h2>LOGIN</h2></div>
+            <form id="loginForm" action="#">
+                <div>
+                    <input id="userid" name="userid" type="text" size="40" placeholder="이메일" required><br>
+                    <input id="passwd" name="passwd" type="password" size="40" placeholder="비밀번호" required>
+                </div>
+
+                <div class="keep_login">
+                    <input id="keep_login" name="keep_login" type="checkbox" value="Y">
+                    <label for="keep_login">로그인 상태 유지</label><br>
+                </div>
+                <div>
+                    <button type="submit">로그인</button><br>
+                    <a href="join_agree.html"><p>회원가입</p></a>
+                    <a href="#"><p>아이디 &middot; 비밀번호 찾기</p></a>
+                    <!--카카오톡으로 시작하기 버튼 -->
+                    <!--비회원 주문 조회 버튼 -->
+                </div>
+            </form>
+        </main>
+        <footer>
+        </footer>
+        <script src="../js/script.js"></script>
+        <script>
+            init();
+        </script>
+    </body>
+</html>

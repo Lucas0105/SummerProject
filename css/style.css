@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+}
+
+main {
+    margin-top: 4.5%;
+
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: gold;
+}
+/* header */
+header {
+    padding: 1%;
+    font-weight: bold;
+    padding-left: 1.8%;
+    margin-bottom: 1%;
+}
+
+header *{
+    display: inline-block;
+}
+
+header a:hover {
+    color: grey;
+}
+#head-first{
+    width: 44%;
+}
+
+
+#logo img {
+    width: 200px;
+    margin-bottom: -13%;
+}
+
+
+
+header ul { 
+    width: 30%;
+    text-align: right;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+header li {
+    margin-right: 2%;
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
+
+}
+
+#git-site {
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 4px;
+    padding: 1%;
+    color: black;
+    padding: 0.5%;
+
+}
+
+/* nav */
+nav{
+    padding: 1.2% 0;
+    border-bottom: 5px solid gold;
+    box-shadow: 3px 3px 8px gold;
+}
+
+nav ul {
+    margin-right: 7%;
+    text-align: center;
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 5%;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    color: rgb(136, 116, 1);
+}
+
+/* main */
+
+#main-bg {
+    
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    margin-top: -4.7%;
+    background-image: url('../img/bg/lemon.jpg');
+    position: relative;
+
+}
+
+#insta-container {
+    width: 25%;
+    background-color: rgba(252, 207, 47, 0.8);
+    position: absolute;
+    top: 5%;
+    left: 37%;
+}
+
+#insta-container img {
+    float: left;
+    padding-right: 15%;
+}
+
+#insta-container p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 2%;
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+.social-text {
+    color: rgb(0, 89, 255) !important;
+}
+
+#search-form{
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    width: 25%;
+}
+
+#search-form input[type=search]{
+    width: 100%;
+    font-size: 1.2em;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+}
+#search-form input[type=image]{
+    position: absolute;
+    width: 7%;
+    right: 5%;
+    top: 18%;
+}
+.main-food {
+    width: 70%;
+}
+
+.main-food div{
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    bottom: 10%;
+    background-color: white;
+    border-radius: 15px;
+
+
+}
+
+.main-food div *{
+    padding: 8%;
+}
+.main-food div h3 {
+    padding-bottom: 3%;
+}
+
+
+.main-food div:hover{
+    color: white;
+}
+
+.main-food div:hover:nth-child(1){
+    background-color: rgb(80, 0, 255);
+
+}
+
+
+.main-food div:nth-child(1) a{
+    color: rgb(80, 0, 255);
+
+}
+
+.main-food div:hover:nth-child(2){
+    background-color: rgb(0, 80, 255);
+}
+
+.main-food div:nth-child(2) a{
+    color: rgb(0, 80, 255);
+}
+
+.main-food div:hover:nth-child(3){
+    background-color: rgb(0, 160, 255);
+}
+
+.main-food div:nth-child(3) a{
+    color: rgb(0, 160, 255);
+}
+
+.main-food div:hover a{
+    transform: translate(30px);
+}
+
+.main-food div a{
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white !important;
+    box-sizing: border-box;
+    padding: 2%;
+    margin-left: 6%;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.main-food div:nth-child(1){
+    left: 19%;
+}
+
+.main-food div:nth-child(2){
+    left: 41%;
+}
+
+.main-food div:nth-child(3){
+    left: 63%;
+}
+
+#main-content{
+    margin: 5% auto;
+    width: 80%;
+    padding-left: 20%;
+}
+
+#main-content h1 {
+    margin-left: 29%;
+    margin-bottom: 2%;
+}
+
+#main-content table{
+    display: inline-block;
+    margin-right: 1%;
+    width: 25%;
+    border-collapse: collapse;
+
+}
+
+#main-content table th {
+    padding:0 auto;
+    width: 1%;
+    background-color: rgba(252, 237, 47, 0.8);
+    padding: 5% 0;
+    color: rgb(51, 51, 51);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#main-content table:last-child th{
+    background-color: rgb(255, 174, 0);
+
+}
+
+
+#main-content table td {
+
+    padding-left: 30px;
+    background-color: rgb(241, 239, 239);
+    height: 50px;
+
+}
+
+#main-content table:first-child{
+    margin-left: 15%;
+}
+
+#main-content table tr:last-child td{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-ai h1 {
+    margin-left: 25% !important;
+}
+
+.main-ai-container div:first-child{
+    margin-left : 0;
+}
+.main-ai-ul{
+    margin-left: 23%;
+    margin-bottom: 3%;
+}
+.main-ai-ul li{
+    margin-right: 5%;
+    display: inline-block;
+    font-weight: bold;
+}
+.main-ai-ul li:first-child{
+    border: 1px solid blueviolet;
+    border-radius: 30px;
+    background-color: blueviolet;
+    padding: 1%;
+    color: white;
+}
+.main-ai-ul li:first-child * {
+    color: white;
+
+}
+
+/* login */
+#loginContainer {
+    margin-left: 40%;
+    border: 5px solid goldenrod;
+    display: inline-block;
+    padding: 20px;
+}
+
+#loginContainer h2 {
+    margin-bottom: 5%;
+}
+#userid, #passwd {
+    height: 30px;
+    margin-bottom: 0.5%;
+    padding: 3px;
+
+}
+
+#loginContainer button {
+    margin-top: 5%;
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+}
+
+#loginContainer a:last-child{
+    float: right;
+}
+
+/* joinAgree */
+#joinAgreeContainer {
+    display: inline-block;
+    margin-left: 41%;
+    
+}
+#joinAgreeContainer h2 {
+    margin-left: 23%;
+}
+
+#joinAgreeContainer div {
+    margin-bottom: 2%;
+}
+
+#joinAgreeContainer button ,#joinContainer button {
+    /* background-color: rgb(156, 156, 156);
+    border: 1px solid rgb(156, 156, 156); */
+    background-color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+    font-size: 1.5em;
+    color: white;
+}
+/* join */
+#joinContainer{
+    margin-left: 40%;
+}
+#joinContainer h2 {
+    padding-left: 12%;
+}
+#joinContainer h2 + p {
+    padding-left: 9%;
+}
+#join {
+    border: 5px solid goldenrod;
+    display: inline-block;
+    padding: 20px;
+    padding: 3%;
+    margin-top: 20px;
+    padding-right: 4%;
+}
+#join input:not([name='gender']) {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1%;
+    padding-left: 3%;
+}
+
+#join div {
+    margin-top: 2%;
+}
+
+.birthday *:not(p){
+    width: 31%;
+    margin-left: 2%;
+    padding-left: 1%;
+    margin-bottom: 3%;
+}
+
+#joinContainer button{
+    margin-left: 13%;
+    margin-top: 1%;
+}
+
+/* class */
+.width-100 {
+    width: 100%;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.margin-t {
+    margin-top: 5%;
+}
+
+/* rank */
+#rankContainer {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    height: 250px;
+    background-color: #555555;
+    color: white;
+    padding-left: 5%;
+    line-height: 1.8em;
+    margin-top: 8%;
+}
+footer img {
+    margin-left: -1%;
+    margin-bottom: -18px;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+.card {
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px rgb(148, 148, 148);
+    margin-left: 3%;
+}
+.card img {
+    width: 130%;
+    height: 200px;
+
+}
+.card p{
+    margin: 5% auto;
+    margin-left: 10%;
+
+    color: blue;
+    padding: 1%;
+    
+}
+
+.card p:last-child{
+    color: black;
+}

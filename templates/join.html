@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+        </header>
+        <nav>
+        </nav>
+        <main id="joinContainer">
+            <div>
+                <div>
+                    <h2>JOIN</h2>
+                    <p>안녕하세요 Fooding입니다.</p>
+                </div>
+                
+                
+                    <form id="join-form" action="#" method="POST" enctype="multipart/form-data">
+                        <div id="join">
+                        <div>
+                            <input id="photo" name="photo" type="file">
+                        </div>
+                        <div>
+                            <input id="email" name="email" type="email" placeholder="이메일" autofocus>
+                            <input id="pass1" name="pass1" type="password" placeholder="비밀번호"><br>
+                            <input id="pass2" type="password" placeholder="비밀번호 확인">
+                        </div>
+                        <div>
+                            <label for="name"><p>이름</p></label>
+                            <input id="name" name="name" type="text" placeholder="이름을 입력하세요.">
+                        </div>
+                        <div class="text-left margin-tb3">
+                            <label><p>성별</p></label>
+                            <input id="man" name="gender" type="radio" value="man">
+                            <label for="man">남자</label>
+                            <br>
+                            <input id="women" name="gender" type="radio" value="women">
+                            <label for="women">여자</label>
+                        </div>
+                        <div>
+                            <label for="phone"><p>연락처</p></label>
+                            <input id="phone" name="phone" type="tel" placeholder="연락처">
+                        </div>
+                        <div class="margin-tb3">
+                            <label for="address"><p>주소</p></label>
+                            <input id="address" name="address" type="text" placeholder="주소"><br>
+                            <input id="address_detaile" name="address_detaile" type="text" placeholder="상세주소">
+                        </div>
+                        <div class="birthday">
+                            <label for="birth"><p>생년월일</p></label>
+                            <script>
+                                document.write("<select name='birth'>");
+                                for (var i = 1900; i <= 2021; i++){
+                                    document.write("<option value=" + i + ">" + i + "</option>");
+                                }
+                                document.write("</select>");
+
+                                document.write("<select name='month'>");
+                                    document.write("<option value='0'>월</option>");
+                                for (var i = 1; i <= 12; i++){
+                                    document.write("<option value=" + i + ">" + i + "</option>");
+                                }
+                                document.write("</select>");
+
+                                document.write("<select name='month'>");
+                                    document.write("<option value='0'>일</option>");
+                                for (var i = 1; i <= 31; i++){
+                                    document.write("<option value=" + i + ">" + i + "</option>");
+                                }
+                                document.write("</select>");
+                            </script>
+                            <!-- <select name="birth">
+                                <option value="2021">2021</option>
+                            </select>
+                            <select name="month">
+                                <option value="1">1</option>
+                            </select>
+                            <select name="day">
+                                <option value="1">1</option>
+                            </select> -->
+                        </div>
+                            <input id="agree_term" name="agree_term" type="hidden">
+                            <input id="agree_privacy" name="agree_privacy" type="hidden">
+                            <input id="agree_sms" name="agree_sms" type="hidden">
+                            <input id="agree_email" name="agree_email" type="hidden">
+                       
+                    </div>
+                    <div>
+                        <button type="button" onclick="formvalidator()">가입하기</button>
+                    </div>
+                    </form>
+                
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="../js/script.js"></script>
+        <script>
+            init();
+        </script>
+    </body>
+</html>
