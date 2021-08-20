@@ -70,6 +70,33 @@ let addNav = function(){
     new Menu('푸딩 레시피', 'recipe.html');
 };
 
+let addAside = function(){
+    aside = document.querySelector('aside');
+    div1 = document.createElement('div');
+    div2 = document.createElement('div');
+    a1 = document.createElement('a');
+    a2 = document.createElement('a');
+    img1 = document.createElement('img');
+    img2 = document.createElement('img');
+
+    div1.className = 'nav-btn';
+    div2.className = 'nav-gray-btn';
+    a1.href = "#none";
+    a2.href = "#";
+    img1.src = '../img/icon/share.png'
+    img2.src = '../img/icon/up.png'
+    img1.width = '50'
+    img2.width = '50'
+
+    a1.appendChild(img1);
+    a2.appendChild(img2);
+    div1.appendChild(a1);
+    div2.appendChild(a2);
+    aside.appendChild(div1);
+    aside.appendChild(div2);
+  
+}
+
 let addFooter = function() {
     const footer = document.querySelector('footer');
     const img = document.createElement('img');
@@ -89,6 +116,7 @@ let addFooter = function() {
 let init = function() {
     addHeader();
     addNav();
+    addAside();
     addFooter();
 
 };
